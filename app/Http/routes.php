@@ -23,11 +23,11 @@ $app->get('/', function () {
 });
 
 $app->get('/version', function () use ($app) {
-    return response()->json([ 'version' => $app->version()]);
+    return response()->json([ 'version' => 'Static version ;)']);
 });
 
 $app->get('/env', function () {
-    return response()->json($_ENV);
+    return response()->json($_ENV); // don't expose this, it will expose your service settings
 });
 
 $app->get('/migrate', function () {

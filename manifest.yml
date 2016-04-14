@@ -1,6 +1,6 @@
 ---
 applications:
-- name: cf-sample-app-php
+- name: my-php-app
   memory: 128MB
   instances: 1
   host: my-random-hostname-php
