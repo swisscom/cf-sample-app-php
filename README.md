@@ -5,8 +5,8 @@ A sample [Lumen](https://lumen.laravel.com/) application to deploy to Cloud Foun
 ## Run locally
 
 1. Install [PHP](https://secure.php.net/manual/en/install.php)
-1. Install [Composer](https://getcomposer.org/download/)
-1. Run `php composer.phar install`
+1. Install [Composer](https://getcomposer.org/download/) globally on your machine
+1. Run `composer install`
 1. Run `php -S localhost:3000 -t public`
 1. Visit [http://localhost:3000](http://localhost:3000)
 
