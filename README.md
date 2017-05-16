@@ -13,5 +13,5 @@ A sample [Lumen](https://lumen.laravel.com/) application to deploy to Cloud Foun
 ## Run in the cloud
 
 1. Install the [cf CLI](https://github.com/cloudfoundry/cli#downloads)
-1. Run `cf push my-php-app --random-route`
+1. Run `cf push my-php-app -m 128M --random-route`
 1. Visit the given URL
