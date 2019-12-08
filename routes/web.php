@@ -11,17 +11,17 @@
 |
 */
 
-$app->get('/', function () {
+$router->get('/', function () {
     return response()->json([ 'links' => [
       url('/version'),
       url('/env')
     ]]);
 });
 
-$app->get('/version', function () use ($app) {
+$router->get('/version', function () {
     return response()->json([ 'version' => 'Static version ;)']);
 });
 
-$app->get('/env', function () {
+$router->get('/env', function () {
     return response()->json($_ENV); // don't expose this, it will expose your service settings
 });
